@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+/*
+Theme Name: WP_PORTFOLIO
+Author: wp_portfolio
+Description : This is my original wordpress portfolio
+Vertion 1.0
+*/
+
+body {
+  margin: 0px;
+  font-family: 'ヒラギノ角ゴ', 'Hiragino kaku gothic Pro', sans
+}
+
+/*記事全体*/
+.container {
+  max-width: 650px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  padding: auto;
+}
+
+/*記事*/
+article {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: solid 1px #cccccc;
+}
+
+article:hover {
+  background-color: #eeeeee;
+}
+
+article h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+article h1 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*記事の投稿日*/
+article time {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+/*記事の投稿日アイコン*/
+time i {
+  margin-right: 5px;
+  color: #333333;
+}
+
+/*記事のカテゴリー*/
+.postcat a {
+    padding: 3px 5px;
+    font-size: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #464646;
+}
+
+/*ページナビゲーション*/
+.wp-pagenavi {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wp-pagenavi a {
+  margin: 5px;
+  padding: 10px;
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.wp-pagenavi a:hover {
+  color: #ffffff;
+  background-color: #464646;
+}
+
+.wp-pagenavi .current {
+  margin: 5px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #464646;
+  border: solid 1px #cccccc;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+/*ヘッダー*/
+header {
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+header a {
+  color: #464646;
+  text-decoration: none;
+}
+
+.siteinfo {
+  border-bottom: solid 1px #cccccc;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.siteinfo h1 {
+  margin: 0;
+  font-size: 50px;
+  font-family: 'Coiny', cursive;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*ナビゲーションメニュー*/
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  margin-right: 10px;
+}
+
+nav a {
+    display: block;
+    margin-top: 15px;
+    padding: 5px 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #464646;
+}
+
+nav a:hover {
+  color: #cccccc;
+}
+
+/*フッター*/
+footer {
+  margin-top: 30px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #464646;
+  color: #ffffff;
+}
+
+/*ウィジェットメニュー*/
+.blogmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blogmenu .widget {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.blogmenu .widgettitle {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #464646;
+  color: #ffffff;
+}
+
+#categories-3 li a {
+  border: solid 1px #464646;
+  border-radius: 5px;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #464646;
+  margin: 5px;
+}
+
+#categories-3 li a:hover{
+  color: #cccccc;
+}
+
+#categories-3 ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#categories-3 li {
+  float: left;
+  width: auto;
+}
+
+#recent-posts-3 li a {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  color: #464646;
+  text-decoration: none;
+}
+
+#recent-posts-3 li a:hover {
+  color: #cccccc;
+}
+
+/*カレンダー*/
+#wp-calendar {
+    width: 100%;
+    font-size: 18px;
+}
+
+@media (min-width: 768px){
+
+  /*二段組に対応するため元のサイズを上書き*/
+  .container {
+    max-width: 1100px;
+    overflow: hidden;
+  }
+
+  .contents {
+    width: 65%;
+    float: left;
+  }
+
+  .blogmenu {
+    width: 30%;
+    float: right;
+  }
+  
+}
+
+/* 記事の概要 */
+.excerpt {
+  overflow: hidden;
+}
+
+.excerpt p  {
+  font-size: 14px
+}
+
+.excerpt .more a  {
+  padding: 5px 20px;
+  border: solid 1px #cccccc;
+  border-radius: 5px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.excerpt .more a:hover{
+  background-color: #cccccc
+}
+
+.excerpt .more i  {
+  margin-left: 10px;
+  color: #464646
+}
+
+@media (min-width: 500px) {
+  .excerpt img  {
+    float: left;
+    margin-right: 20px;
+    width: 40%}
+}
+
+@media (max-width: 499px) {
+  .excerpt img  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto}
+
+  nav a {
+      display: block;
+      margin-top: 5px;
+      padding: 3px 3px;
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 5px;
+      background-color: #464646;
+  }
+
+  .siteinfo h1 {
+    margin-bottom: 20px;
+  }
+
+}
